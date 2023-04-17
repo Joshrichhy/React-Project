@@ -1,0 +1,63 @@
+.logo{
+    color: white;
+    text-shadow: 1px 1px 2px rgb(219, 246, 95), 0 0 25px rgb(4, 4, 4), 0 0 5px rgb(50, 50, 251);
+    font-size: 16px;
+    font-weight: 700;
+
+}
+.topNav{
+    height: 5%;
+    display: flex;
+    width: 100%;
+    padding: 1% 2%;
+}
+.ptag{
+    width: 10%;
+    text-align: start;
+}
+
+.topNav nav{
+    display: flex;
+    height: 100%;
+    width: 80%;
+    justify-content: flex-end;
+
+
+
+}
+.topNav nav li{
+    list-style: none;
+    padding: 1% 2%;
+
+}
+
+.topNav nav li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+
+}
+.login{
+    display: flex;
+    text-align: center;
+    padding: 1% 1%;
+    justify-content: space-between;
+    width: 5%;
+    font-weight: 500;
+    font-size: large;
+}
+.getDemo{
+    border: 2px solid blue;
+    color: blue;
+    font-size: small;
+    height: 50%;
+    text-align: center;
+    padding: 0% 1%;
+
+}
+.login img{
+    width: 40%;
+    height: 60%;
+    padding-top: 10%;
+}

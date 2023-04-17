@@ -1,0 +1,20 @@
+.welcome{
+    border: solid 2px navajowhite;
+    background: saddlebrown;
+    font-size: xx-large;
+    color: rebeccapurple;
+    font-weight: bold;
+    background-image: linear-gradient(to right, blueviolet, lavenderblush, mediumpurple );
+    width: 40%;
+    height: 70vh;
+
+}
+#quote{
+    font-size: medium;
+    padding-top: 20%;
+    padding-bottom: 50%;
+    color: black;
+    font-weight: bold;
+
+
+}

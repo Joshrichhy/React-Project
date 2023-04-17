@@ -1,0 +1,30 @@
+.board{
+    border: solid purple;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    width: 40%;
+    height: 70vh;
+
+}
+
+#button{
+
+}
+
+.border{
+    background: navajowhite;
+    padding: 20px;
+    border: 5px solid white;
+    justify-content: space-between;
+    font-size: xxx-large;
+}
+
+
+.border:hover{
+    background: hotpink;
+    padding: 20px;
+    border: 5px solid white;
+    transform: scale(1.1)
+
+
+}
