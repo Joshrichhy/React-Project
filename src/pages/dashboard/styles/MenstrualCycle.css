@@ -1,0 +1,11 @@
+.mainContainer{
+    background-image: url("https://images.summitmedia-digital.com/cosmo/images/2019/10/18/metabolism-period-menstrual-cycle-1571372615.jpg");
+}
+.topNav{
+    display: flex;
+    list-style: none;
+
+}
+.topNav li{
+    margin-left: 10%;
+}

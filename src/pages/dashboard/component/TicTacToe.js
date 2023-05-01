@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import '../styles/TicTacToe.css'
+import Video from '../styles/videoplayback.mp4'
 
 function TicTacToe() {
-
 
 
     function positionPlayerOne(input){
@@ -18,6 +18,14 @@ function TicTacToe() {
         if (check.innerHTML == "tic" || check.innerHTML == "tac" ){
         alert("Input taken")
         return true}return false;}
+
+
+    function resetGame(){
+        let resetBoard = document.querySelector(".border")
+        resetBoard.innerText = " "
+
+    }
+
 
     function checkWinning(){
             if(document.getElementById("1").innerHTML == "tic" && document.getElementById("2").innerHTML == "tic"
@@ -87,32 +95,28 @@ function TicTacToe() {
     }
 
 
-
-
+    var count = 0
     function playerOnePlays(event){
+
         if(event.target.id === 'playerOne'){
+            if(count == 0){
+                count++;
             let num = document.getElementById('number').value
-            if(!checkBoxForPlayerPosition(num)){
-                positionPlayerOne(num)}}
-        checkWinning()
-    }
+            if(!checkBoxForPlayerPosition(num)){positionPlayerOne(num)}}
+            else if(count == 1){
 
-    function playerTwoPlays(event){
-        if(event.target.id === 'playerTwo'){
-            let num = document.getElementById('number2').value
-            if(!checkBoxForPlayerPosition(num)){
-                positionPlayerTwo(num)}}
-         checkWinning()
-    }
+                let num = document.getElementById('number').value
+                if(!checkBoxForPlayerPosition(num)){
+                    positionPlayerTwo(num)} count = 0}
+        checkWinning()}
 
+
+    }
 
 
     return(
-        <div>
-        <label className= "button">
-            Player ONE:   <input id = "number"></input>
-            <button id= "playerOne" onClick={playerOnePlays}>Play</button>
-        </label>
+        <div className="Main">
+
         <div className= "board">
             <div className= "border" id= "1">X</div>
             <div className= "border" id= "2">O</div>
@@ -124,10 +128,19 @@ function TicTacToe() {
             <div className= "border" id= "8">X</div>
             <div className= "border" id= "9">X</div>
         </div>
-    <label className= "button">
-      Player Two:  <input id= "number2"></input>
-        <button id="playerTwo" onClick={playerTwoPlays}>Play</button>
-    </label>
+
+
+            <div className="video">
+                <video src={Video} autoPlay="true" controls="controls" ></video>
+
+                <div className="buttonBorder">
+                    <label className= "button">
+                        Player ONE:   <input id = "number"></input>
+                        <button id= "playerOne" onClick={playerOnePlays}>Play</button>
+                    </label>
+                </div>
+            </div>
+
         </div>
     )
 }

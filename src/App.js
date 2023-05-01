@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import TopNav from "./pages/dashboard/component/TopNav";
 import Footer from "./pages/authentication/component/login/component/Footer";
 import {FooterTwo, FooterThree} from "./pages/authentication/component/login/component/Footer";
@@ -8,13 +9,19 @@ import FunctionalComponentUsingUseCase from "./pages/dashboard/component/Functio
 import ButtonManipulation from "./pages/dashboard/component/ButtonManipulation";
 import TicTacToe from "./pages/dashboard/component/TicTacToe";
 import QuoteGenerator from "./pages/dashboard/component/QuoteGenerator";
+import MenstrualCycle from "./pages/dashboard/component/MenstrualCycle";
 
 function App() {
   return (
     <div className="App">
-        {/*<TopNav />*/}
-        <TicTacToe/>
-        {/*<QuoteGenerator/>*/}
+        <Router>
+            <Routes>
+                <Route path='/' element={<TopNav />}/>
+                <Route path='/TicTacToe' element={<TicTacToe/>}/>
+                <Route path='/quoteGenerator' element={<QuoteGenerator/>}/>
+            </Routes>
+        </Router>
+        <MenstrualCycle/>
 
         {/*<Footer/>*/}
         {/*<FooterTwo/>*/}

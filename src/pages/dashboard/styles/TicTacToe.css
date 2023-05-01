@@ -7,8 +7,26 @@
 
 }
 
-#button{
+#playerOne{
+position: relative;
 
+    background-color: mediumseagreen;
+    color: white;
+    font-style: italic;
+    padding: 10% 10% 0% 10%;
+
+}
+
+.Main{
+    background-image: linear-gradient(to right, mediumpurple, coral, oldlace );
+    display: inline-grid;
+    grid-template-columns: auto auto;
+}
+.video{
+    position: relative;
+
+    padding-right: 90%;
+    padding-bottom: 10%;
 }
 
 .border{
@@ -26,5 +44,13 @@
     border: 5px solid white;
     transform: scale(1.1)
 
+}
 
+.buttonBorder{
+    display: inline-grid;
+    grid-template-rows: auto auto;
+    border: solid purple;
+    padding-top: 30%;
+    background-image: linear-gradient(to right, mediumpurple, ivory, cornflowerblue );
+    border-radius: 10%;
 }

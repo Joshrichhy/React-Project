@@ -1,7 +1,9 @@
 import React from "react";
 import '../styles/QuoteGenerator.css'
+import {useNavigate} from "react-router-dom";
 
 function QuoteGenerator(){
+    const Navigate = useNavigate()
 
 
 
@@ -79,7 +81,9 @@ function QuoteGenerator(){
 
     return(
         <div className="welcome" id="welcome" onMouseOver={handle}>JOSH'S DAILY QUOTE
+            <button onClick={()=>{Navigate('/TicTacToe')}}>Play TICTACTOE</button>
         <p id="quote">Yello</p></div>
+
     )
 }
 export default QuoteGenerator

@@ -33,7 +33,8 @@ class TopNav extends React.Component{
                     </div>
                     <div className="login">
                         <img src={LoginSvg} alt="fav"/>
-                            <p className="ptag_login">Login</p>
+                        <a href={'/quoteGenerator'} className="ptag_login">Login</a>
+                            <p >Login</p>
                     </div>
 
                 </nav>
