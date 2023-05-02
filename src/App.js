@@ -9,7 +9,13 @@ import FunctionalComponentUsingUseCase from "./pages/dashboard/component/Functio
 import ButtonManipulation from "./pages/dashboard/component/ButtonManipulation";
 import TicTacToe from "./pages/dashboard/component/TicTacToe";
 import QuoteGenerator from "./pages/dashboard/component/QuoteGenerator";
+
 import MenstrualCycle from "./pages/dashboard/component/MenstrualCycle";
+import TodoList from "./pages/dashboard/component/TodoList";
+import Store from "./store/Store";
+import CounterComponent from "./pages/dashboard/component/CounterComponent";
+import CardDetails from "./store/CardDetails";
+import CardDetailsComponent from "./pages/dashboard/component/CardDetailsComponent";
 
 function App() {
   return (
@@ -19,9 +25,15 @@ function App() {
                 <Route path='/' element={<TopNav />}/>
                 <Route path='/TicTacToe' element={<TicTacToe/>}/>
                 <Route path='/quoteGenerator' element={<QuoteGenerator/>}/>
+                <Route path='/counter' element={<CounterComponent/>}/>
+                <Route path='/cardDetails' element={<CardDetailsComponent/>}/>
             </Routes>
         </Router>
-        <MenstrualCycle/>
+        {/*<MenstrualCycle/><TodoList/>*/}
+
+
+
+
 
         {/*<Footer/>*/}
         {/*<FooterTwo/>*/}
