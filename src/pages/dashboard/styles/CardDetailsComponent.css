@@ -1,3 +1,39 @@
+.MainContainer{
+    position: center;
+
+
+}
+
 .container{
     display: flex;
+    position: center;
+    background-color: gray;
+    box-shadow: greenyellow;
+    margin-top: 7%;
+    margin-right: 3%;
+    border: 5px solid paleturquoise;
+    height: 70vh;
+    width: 100vw;
+    border-radius: 3%;
+    color: white;
+    font-family: "Helvetica Neue";
+    font-weight: bolder;
+    text-decoration-color: #282c34;
+}
+.details{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    margin-top: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+
+
+}
+button{
+    margin-top: 10%;
+    color: white;
+    width: 50%;
+    height: 18%;
+    background-color: blueviolet;
+    position: relative;
 }

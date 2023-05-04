@@ -16,10 +16,12 @@ import Store from "./store/Store";
 import CounterComponent from "./pages/dashboard/component/CounterComponent";
 import CardDetails from "./store/CardDetails";
 import CardDetailsComponent from "./pages/dashboard/component/CardDetailsComponent";
+import Card from "./pages/dashboard/component/Card";
 
 function App() {
   return (
     <div className="App">
+        <Card/>
         <Router>
             <Routes>
                 <Route path='/' element={<TopNav />}/>
