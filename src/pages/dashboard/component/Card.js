@@ -6,18 +6,21 @@ const Card =() =>{
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError]= useState(null)
 
-    const url = "https://dummyjson.com/products/1";
-
-    async function fetchProduct(){
-        await fetch(url)
-            .then(data=> data.json())
-            .then(data=> {setValue(data); console.log(data)})
-            .catch(err => setError(err.message))
-    }
 
 
+    // async function fetchProduct(){
+    //     await fetch(url)
+    //         .then(data=> data.json())
+    //         .then(data=> {setValue(data); console.log(data)})
+    //         .catch(err => setError(err.message))
+    // }
+
+    let count = 0;
 
     const fetchData= useCallback(async ()=>{
+        count++
+
+        const url = "https://dummyjson.com/products/"+count;
         setIsLoading(true);
         try{
             const res = await fetch(url,{
@@ -39,6 +42,9 @@ const Card =() =>{
             setIsLoading(false);
         }
     },[]);
+
+
+
     useEffect(()=>{
             fetchData();
         }, [fetchData]
@@ -52,8 +58,11 @@ const Card =() =>{
     }
     return(
         <div>
-            <p>Brand Name: {data.brand}</p>
+            <p>Brand Name: {data.description}</p>
+            <button onClick={()=>
+                fetchData()}>Change</button>
         </div>
+
     )
 }
 export default Card;

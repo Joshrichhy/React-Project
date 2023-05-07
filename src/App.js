@@ -21,7 +21,7 @@ import Card from "./pages/dashboard/component/Card";
 function App() {
   return (
     <div className="App">
-        <Card/>
+        {/*<Card/>*/}
         <Router>
             <Routes>
                 <Route path='/' element={<TopNav />}/>
@@ -29,9 +29,11 @@ function App() {
                 <Route path='/quoteGenerator' element={<QuoteGenerator/>}/>
                 <Route path='/counter' element={<CounterComponent/>}/>
                 <Route path='/cardDetails' element={<CardDetailsComponent/>}/>
+                <Route path='/menstrualCycle' element={<MenstrualCycle/>}/>
+                <Route path='/menstrualCycle' element={<MenstrualCycle/>}/>
             </Routes>
         </Router>
-        {/*<MenstrualCycle/><TodoList/>*/}
+        {/*<TodoList/>*/}
 
 
 

@@ -2,15 +2,15 @@ import  {createSlice} from "@reduxjs/toolkit";
 
 const initialValue = {
     id: 0,
-    firstName: "Joshua",
+    firstName: "Olayinka",
     lastName: "",
     maidenName: " ",
     age: 0,
-    gender: "Male",
-    email: "kuse",
-    phoneNumber: "07033490197",
-    username: "joshrichhy",
-    password: "1234"
+    gender: " ",
+    email: "",
+    phoneNumber: "",
+    username: "",
+    password: ""
 }
 
 export const CardDetailsSlice = createSlice({
